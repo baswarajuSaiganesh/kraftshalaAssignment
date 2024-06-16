@@ -1,0 +1,77 @@
+.weather_details_card_light{
+    height: auto;
+    width: 80%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+}
+
+.weather_details_card_dark{
+    height: auto;
+    width: 80%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    background-color: white;
+}
+
+.para_light{
+    margin: 0;
+    font-size: 14px;
+}
+
+.para_dark{
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .weather_details_card_light{
+        width: 65%;
+        padding: 24px;
+        margin-bottom: 16px;
+        box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 12px;
+    }
+
+    .weather_details_card_dark{
+        width: 65%;
+        padding: 24px;
+        margin-bottom: 16px;
+        box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 12px;
+    }
+
+    .para_light{
+        font-size: 24px;
+    }
+
+    .para_dark{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .weather_details_card_light{
+        width: 65%;
+        padding: 28px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 14px;
+    }
+
+    .weather_details_card_dark{
+        width: 65%;
+        padding: 28px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 14px;
+    }
+
+    .para_light{
+        font-size: 28px;
+    }
+
+    .para_dark{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,112 @@
+.header_light{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.header_dark{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: black;
+    color: white;
+}
+
+
+.company_name_light{
+  font-size: 12px;
+  font-weight: 800;
+  color: orange;
+}
+
+.company_name_dark{
+  font-size: 12px;
+  font-weight: 800;
+  color: orange;
+}
+
+.heading_light{
+  font-size: 16px;
+}
+
+.heading_dark{
+  font-size: 16px;;
+}
+
+.mode_btn_light{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px; 
+  padding: 5px;
+}
+
+.mode_btn_dark{
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 10px; 
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .company_name_light{
+    font-size: 20px;
+  }
+
+  .company_name_dark{
+    font-size: 20px;
+  }
+
+  .heading_light{
+    font-size: 24px;
+  }
+
+  .heading_dark{
+    font-size: 24px;
+  }
+
+  .mode_btn_light{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .mode_btn_dark{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .company_name_light{
+    font-size: 28px;
+  }
+
+  .company_name_dark{
+    font-size: 28px;
+  }
+
+  .heading_light{
+    font-size: 32px;
+  }
+
+  .heading_dark{
+    font-size: 32px;
+  }
+
+  .mode_btn_light{
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .mode_btn_dark{
+    font-size: 24px;
+    padding: 12px;
+  }
+}

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import WeatherForecastCard from './components/WeatherForecastCard'
+import Header from './components/Header';
+import ModeContext from './context/ModeContext';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () =>{
+  const [activeMode, setActiveMode] = useState('light')
+  const changeMode = data => {
+    if (data === false){
+      setActiveMode('light')
+    }else{
+      setActiveMode('dark')
+    }
+  }
+  const containerClass = activeMode === 'light'? 'container_light' : 'container_dark'
+  return(
+    <ModeContext.Provider 
+    value={{activeMode, changeMode: changeMode }}
+    >
+    <div className={containerClass}>
+      <Header />
+      <WeatherForecastCard />
     </div>
-  );
+    </ModeContext.Provider>
+)
 }
+
 
 export default App;
